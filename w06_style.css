@@ -1,0 +1,26 @@
+html {
+  background-color: #B2BEBF
+}
+
+h1 {
+  font-size: 24px
+  font-weight: bold
+  color: #BD2A2E
+  text-align: start 
+}
+
+p {
+  color: #3B3936
+  font-family: "Times"
+  font-weight: normal
+  width: 75%
+  height: 75%
+}
+
+
+ul {
+  text-align: center
+  color: #889C9B
+  background-color: #BD2A2E
+  border: 2px solid #3B3936
+}
