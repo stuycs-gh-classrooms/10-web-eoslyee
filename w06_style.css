@@ -3,8 +3,8 @@ html {
 }
 
 h1 {
-  font-family: "copperplate papyrus";
-  font-size: 24px;
+  font-family: "Fantasy";
+  font-size: 38px;
   font-weight: bold;
   color: #BD2A2E;
   text-align: start;
@@ -14,7 +14,6 @@ p {
   color: #3B3936;
   font-family: "Courier New";
   font-size: 16px;
-  font-family: "Times";
   font-weight: normal;
   width: 75%;
   height: 75%;
@@ -36,7 +35,7 @@ ul {
 a {
   color: #486966;
   font-size: 18px;
-  font-family: "Monaco";
+  font-family: "Helvetica";
   font-weight: bold;
   border: 2px solid #486966;
 }
