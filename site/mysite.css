@@ -1,5 +1,23 @@
-/MY SITE'S DESGIN/
+/*MY SITE'S DESGIN*/
 
 html {
-  background-color:
+  background-color: #D0C2B0;
+  font-size: 24px;
 }
+
+body {
+  width: 80%;
+  height: 100%;
+  background-color: #E89275;
+}
+
+/*nav list*/
+nav {
+  background-color: #DBCDA4;
+  font-size: 18px;
+  float: left;
+  border-top-left-radius: inherit;
+}
+ .menu {
+   color: #6B4945;
+ }
