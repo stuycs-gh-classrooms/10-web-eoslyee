@@ -3,11 +3,14 @@
 html {
   background-color: #D0C2B0;
   font-size: 24px;
+  font-family: "Times New Roman";
 }
 
 body {
-  width: 80%;
+  width: 90%;
   height: 100%;
+  padding: 0px;
+  margin-left: 5%;
   background-color: #E89275;
 }
 
@@ -17,7 +20,55 @@ nav {
   font-size: 18px;
   float: left;
   border-top-left-radius: inherit;
+  width: 25%;
 }
- .menu {
-   color: #6B4945;
- }
+
+ul {
+  padding: 0;
+  font-size: .75em;
+  text-align: start;
+  list-style: none;
+  margin-bottom: 0px;
+}
+.current {
+  background-color: #E89275;
+}
+
+.navlink {
+  color: #6B4945;
+  text-decoration: none;
+  font-variant: all-small-caps;
+}
+
+/*nav done*/
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+p {
+  width: 65%;
+  float: right;
+}
+
+div {
+  display: block;
+}
+
+.newshow{
+  display: inline;
+  overflow: auto;
+}
+
+.showpic {
+  display: block;
+  float: left;
+  width: 150px;
+  height: 180px;
+  margin-right: 10px;
+}
+
+.show-text {
+
+}
