@@ -3,33 +3,39 @@
 html {
   background-color: #D0C2B0;
   font-size: 24px;
-  font-family: "Times New Roman";
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
-  width: 90%;
-  height: 100%;
-  padding: 0px;
-  margin-left: 5%;
+  width: 75%;
+  height: 600px;
   background-color: #E89275;
+  border: 20px;
 }
 
 /*nav list*/
 nav {
   background-color: #DBCDA4;
-  font-size: 18px;
+  font-size: 0.75em;
   float: left;
-  border-top-left-radius: inherit;
-  width: 25%;
+  width: 20%;
 }
 
 ul {
+  margin: auto;
   padding: 0;
   font-size: .75em;
   text-align: start;
   list-style: none;
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
+
+li {
+  padding: 3px 0 3px 3px;
+}
+
 .current {
   background-color: #E89275;
 }
@@ -47,28 +53,50 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  font-family: "Comic Sans";
+  color: #9CBCB7;
+}
+
 p {
   width: 65%;
   float: right;
+  margin: 10px;
 }
 
-div {
+/* Show Stuff */
+.catalog {
+  height: 535px;
+  overflow: auto;
   display: block;
 }
 
 .newshow{
-  display: inline;
+  display: block;
   overflow: auto;
+  margin-left: 10px;
+
 }
 
 .showpic {
   display: block;
   float: left;
-  width: 150px;
   height: 180px;
   margin-right: 10px;
 }
 
-.show-text {
+.pic-text {
+  font-size: 0.5em;
+}
 
+.stream {
+  height: 50px;
+  margin: 3px;
+  display: inline;
+}
+
+.rating {
+  font-family: 'Brush Script MT', cursive;
+  font: bold;
+  color: #A68CB5;
 }
