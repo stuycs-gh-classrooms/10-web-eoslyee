@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  height: 5000px;
   background-color: #E89275;
   border: 20px;
 }
