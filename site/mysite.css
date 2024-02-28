@@ -9,26 +9,28 @@ html {
 }
 
 body {
-  height: 5000px;
   background-color: #E89275;
   border: 20px;
+  border-radius: 25px;
 }
 
 /*nav list*/
 nav {
   background-color: #DBCDA4;
-  font-size: 0.75em;
+  font-size: 36px;
   float: left;
   width: 20%;
+  border: 3px;
+  border-top-left-radius: inherit;
 }
 
 ul {
-  margin: auto;
   padding: 0;
+  margin: 10px;
   font-size: .75em;
-  text-align: start;
+  text-align: right;
   list-style: none;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }
 
 li {
@@ -65,7 +67,7 @@ p {
 
 /* Show Stuff */
 .catalog {
-  height: 535px;
+  /*height: 535px;*/
   overflow: auto;
   display: block;
 }
@@ -81,7 +83,7 @@ p {
   border-radius: 25px;
   display: block;
   float: left;
-  height: 180px;
+  height: 360px;
   margin-right: 10px;
 }
 
