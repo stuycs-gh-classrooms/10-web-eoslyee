@@ -1,48 +1,46 @@
 /*MY SITE'S DESGIN*/
 
 html {
-  background-color: #D0C2B0;
+  background-color: #99E2B4;
   font-size: 24px;
   display: flex;
-  align-items: center;
-  justify-content: center;mabraham60
+  font-family: "Lucida-Console"
 }
 
 body {
-  background-color: #E89275;
-  border: 20px;
+  background-color: #78C6A3;
   border-radius: 25px;
+  margin: 10px;
+  padding: 10px;
+  width: 100%;
 }
 
 /*nav list*/
 nav {
-  background-color: #DBCDA4;
   font-size: 36px;
   float: left;
-  width: 20%;
-  border: 3px;
+  width: 18%;
   border-top-left-radius: inherit;
 }
 
 ul {
-  padding: 0;
-  margin: 10px;
+  padding: 5px;
   font-size: .75em;
   text-align: right;
   list-style: none;
-  margin-bottom: 5px;
 }
 
 li {
-  padding: 3px 0 3px 3px;
+  padding: 5px;
 }
 
 .current {
-  background-color: #E89275;
+  background-color: #56AB91;
+  border-radius: 10px;
 }
 
 .navlink {
-  color: #6B4945;
+  color: #40916C;
   text-decoration: none;
   font-variant: all-small-caps;
 }
@@ -52,17 +50,24 @@ li {
 h1 {
   margin: 0;
   text-align: center;
+  color: #1B4332;
+  font-family: "Lucia Handwriting"
+  font-variant: small-caps;
 }
 
 h3 {
-  font-family: "Comic Sans";
-  color: #9CBCB7;
+  font-weight: bold;
+  font-family: "Lucia Handwriting";
+  font-variant: small-caps;
+  color: #2D6A4F;
 }
 
 p {
   width: 65%;
   float: right;
   margin: 10px;
+  font-family: Lucida Console";
+  color: #1B4332;
 }
 
 /* Show Stuff */
@@ -75,7 +80,7 @@ p {
 .newshow{
   display: block;
   overflow: auto;
-  margin-left: 10px;
+  margin-left: 50px;
 
 }
 
@@ -88,17 +93,18 @@ p {
 }
 
 .pic-text {
-  font-size: 0.5em;
+  font-size: 1em;
 }
 
 .stream {
   height: 50px;
   margin: 3px;
   display: inline;
+  float: center;
 }
 
 .rating {
   font-family: 'Brush Script MT', cursive;
   font: bold;
-  color: #A68CB5;
+  color: #2D6A4F;
 }
