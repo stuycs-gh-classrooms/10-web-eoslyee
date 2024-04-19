@@ -1,1 +1,60 @@
-z
+html {
+  background-color: #A6998A;
+  font-size: 24px;
+  display: flex;
+  font-family: "Lucida-Console"
+}
+body {
+  padding: 5%;
+  margin: auto;
+}
+h1 {
+  margin: 0;
+  text-align: center;
+  color: #592925;
+  font-family: "Lucia Handwriting"
+  font-variant: small-caps;
+}
+
+h2 {
+  color: #592925;
+}
+
+h3 {
+  font-weight: bold;
+  font-family: "Lucia Handwriting";
+  font-variant: small-caps;
+  color: #736151;
+}
+
+p {
+  color: #403124;
+  margin: 5%;
+  font-size: 12px;
+}
+
+code {
+  color: #403124;
+  font-size: 12px;
+}
+
+.fractal{
+  margin: auto;
+}
+
+.img {
+  width: 400px;
+  height: auto;
+}
+
+.codes{
+  background-color: lightgray;
+  border: 5px dashed #592925;
+  border-radius: 10px;
+}
+.mods {
+  color: #403124;
+  font-size: 80%;
+  background-color: lightgray;
+  width: 800px;
+}
