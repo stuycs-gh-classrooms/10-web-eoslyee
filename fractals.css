@@ -27,6 +27,11 @@ h3 {
   color: #736151;
 }
 
+h4 {
+  color:#403124;
+  margin: inherit;
+}
+
 p {
   color: #403124;
   margin: 5%;
@@ -36,6 +41,7 @@ p {
 code {
   color: #403124;
   font-size: 12px;
+  line-height: 10px;
 }
 
 .fractal{
@@ -50,7 +56,7 @@ code {
 .codes{
   background-color: lightgray;
   border: 5px dashed #592925;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .mods {
   color: #403124;
