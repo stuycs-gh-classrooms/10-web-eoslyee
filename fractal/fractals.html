@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>FRACTAL FUN!</title>
+        <link href="fractals.css" rel="stylesheet">
+    </head>
+
+
+    <body>
+      <h1> ESTELLA's FRACTALS </h2>
+        <h2>Koch Curve</h2>
+
+        <h3> Basic Curve </h3>
+        <img class="img" src="images/koch.png" alt="Original Koch Curve">
+        <div class=codes>
+          <p>
+              This is the Original Koch Curve.
+              <br><code> draw_koch(patrick, 4, 20) </code></br>
+          </p>
+        </div>
+
+        <h3> My Koch Curve </h3>
+        <img class="img" src="images/koch_mod.png" alt="My Koch Curve">
+        <div class=codes>
+          <div class=mods>
+            <p>
+            <code>draw_koch(patrick, 5, 20, 5)</code>
+            <br> My modifications are:</br>
+            <ul>
+              <li>The color of each koch curve is randomized to make a rainbow.</li>
+              <li>There has been two more lines of koch curve code added, so that when the function is called, koch curve is called six times instead of four.</li>
+              <li>A new parameter that allows you to adjust the width of the pen line has been added.</li>
+            </ul>
+          </p>
+        </div>
+          <p>
+            <br><pre><code>
+  def draw_koch(t, depth, length, width):
+     if depth == 1:
+         t.color(randint(100, 230),
+                 randint(100, 230),
+                 randint(100, 230))
+         t.fd(length)
+     elif depth > 1:
+         draw_koch(t, depth - 1, length, width)
+         t.lt(60)
+         draw_koch(t, depth - 1, length, width)
+         t.rt(120)
+         draw_koch(t, depth - 1, length, width)
+         t.lt(60)
+         draw_koch(t, depth - 1, length, width)
+         t.rt(120)
+         draw_koch(t, depth - 1, length, width)
+         t.lt(60)
+         draw_koch(t, depth - 1, length, width)
+            </br></pre></code>
+          </p>
+        </div>
+
+    <h2> Sierpinski Triangle </h2>
+
+    <h3> Basic Sierpinski Triangle </h3>
+    <img class="img" src="images/sierpinski.png" alt="Original Sierpinski">
+    <div class=codes>
+      <p>
+          This is the Original Triangle.
+          <br><code> draw_sierpinski(patrick, 6, 200) </code></br>
+      </p>
+    </div>
+
+    <h3> My Sierpinski Triangle </h3>
+    <img class="img" src="images/sierpinski_mod.png" alt="My Sierpinski">
+    <div class=codes>
+      <div class=mods>
+      <p>
+        <code>draw_sierpinski(patrick, 4, 300, 5)</code>
+        <br> My modifications are:</br>
+        <ul>
+          <li>Each triangle has been filled with a randomized color.</li>
+          <li>At the end of every sierpinski triangle with depth > 1, a circle is draw from the starting point.</li>
+          <li>A new parameter that allows you to adjust the width of the pen line has been added.</li>
+          <li>The triangle function itself has not been modified.</li>
+        </ul>
+      </p>
+    </div>
+        <br><pre><code>
+  def draw_sierpinski(t, depth, length, width):
+    t.fillcolor(randint(175, 230),
+                randint(175, 230),
+                randint(175, 230))
+    if depth == 1:
+      t.begin_fill()
+      triangle(t, length)
+      t.end_fill()
+    else:
+      draw_sierpinski(t, depth-1, length / 2, width)
+      t.fd(length / 2)
+      draw_sierpinski(t, depth-1, length / 2, width)
+      t.bk(length / 2)
+      t.lt(60)
+      t.fd(length / 2)
+      t.rt(60)
+      draw_sierpinski(t, depth-1, length / 2, width)
+      t.rt(120)
+      t.fd(length / 2)
+      t.lt(60)
+      t.circle(length/2)
+      t.lt(60)
+        </br></pre></code>
+      </p>
+    </div>
+
+      <h2> Tree </h2>
+
+      <h3> Basic Tree </h3>
+      <img class="img" src="images/tree-basic.png" alt="Original Tree">
+      <div class=codes>
+        <p>
+            This is the Original Tree.
+            <br><code> tree(patrick, 4, 50, 20) </code></br>
+        </p>
+      </div>
+
+      <h3> My Tree </h3>
+      <img class="img" src="images/tree_mod.png" alt="My Tree">
+      <div class=codes>
+        <div class=mods>
+        <p>
+          <code>tree(patrick, 5, 50, 20, 5)</code>
+          <br> My modifications are:</br>
+          <ul>
+            <li>The function blossom(t, size, width) has been added, which will draw a cherry blossom. This is called when dept = 0.</li>
+            <li>Each tree will have a cherry blossom at the very tip of the branch, while the other branches are colored brown.</li>
+            <li>The angle and the length of each branch has been randomized</li>
+            <li>As the tree gets more complex, the branches become thinner and shorter</li>
+            <li>The width parameter has been added</li>
+          </ul>
+        </p>
+      </div>
+          <br><pre><code>
+  def blossom(t, size, width):
+    t.width(width)
+    t.lt(30)
+    t.pencolor("#446b33")
+    t.fd(size)
+    t.rt(60)
+    t.pencolor("pink")
+    t.fd(size)
+    t.rt(120)
+    t.fd(size)
+    t.rt(60)
+    t.pencolor("#446b33")
+    t.fd(size)
+    t.rt(150)
+          </br></pre></code>
+          <pre><code>
+  def tree(t, depth, length, angle, width):
+    t.width(width)
+    if depth == 0:
+        blossom(t, length, width)
+        t.pencolor("brown")
+    else:
+        t.pencolor("brown")
+        angle += random.randrange(-5, 5)
+        length += random.randrange(-5, 5)
+        t.fd(length)
+        t.rt(angle)
+        tree(t, depth - 1, length * 0.75, angle, width * 0.9)
+        t.lt(angle * 2)
+        tree(t, depth - 1, length * 0.75, angle, width * 0.9)
+        t.rt(angle)
+        t.bk(length)
+          </pre></code>
+        </p>
+      </div>
+
+    </body>
+
+</html>
