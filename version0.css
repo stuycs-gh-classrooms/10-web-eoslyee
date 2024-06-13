@@ -1,0 +1,15 @@
+body {
+  background-image: url("harryback.jpg");
+  background-size: cover;
+  max-width: 100%;
+  text-align: center;
+  color: #d3e0f5;
+  font-family: "Lucia Handwriting"
+  font-variant: small-caps;
+}
+
+a {
+  color: #d3e0f5;
+  font-style: italic;
+  font-style: bold;
+}
